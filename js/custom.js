@@ -44,3 +44,13 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+
+/* WHATSAPP */
+function whatsapp() {
+    let mensagem;
+
+    mensagem = "Olá, meu nome é Aline." + " Como posso te ajudar" + "?";
+
+    // incluir o método de envio para whatsapp
+    window.open("https:\\wa.me/+5521981971633?text=" + mensagem);
+}

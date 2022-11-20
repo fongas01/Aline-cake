@@ -1,14 +1,5 @@
-// to get current year
-function getYear() {
-    var currentDate = new Date();
-    var currentYear = currentDate.getFullYear();
-    document.querySelector("#displayYear").innerHTML = currentYear;
-}
 
-getYear();
-
-
-// client section owl carousel
+// CARROCEL
 $(".client_owl-carousel").owlCarousel({
     loop: true,
     margin: 0,
@@ -44,4 +35,9 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+
+// LIMPANDO O FORM
+
+form.reset();
+
 

@@ -291,7 +291,7 @@ a:focus {
 .slider_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #E8A1E5 ;
+  /*background-color: #E8A1E5 ;*/
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -301,7 +301,8 @@ a:focus {
 }
 
 .slider_section .detail-box a:hover {
-  *background-color: #C5D394 ;
+  background-color: #C5D394 ;
+ 
 }
 
 .slider_section .img-box img {
@@ -384,7 +385,17 @@ a:focus {
 
 .img-produto{
   width: 180px;
- height:145px;
+  height:145px;
+  
+  /*EFEITO MOUSE*/  
+  transition: all 0.3s; 
+  box-sizing: border-box;
+}
+
+/*EFEITO MOUSE*/ 
+.img-produto:hover{
+  /*o valor do deg vai definir o lado da rotação*/
+  transform: scale(1.56)rotate(0deg);
 }
 
 .about_section .detail-box h3 {
@@ -471,7 +482,7 @@ a:focus {
   margin-top: 45px;
 }
 
-.product_section .btn-box a {
+.product_section .btn-box p {
   display: inline-block;
   padding: 10px 40px;
   background-color: #E8A1E5 ;
@@ -480,10 +491,13 @@ a:focus {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: none;
+  margin-left: 2px;
+  text-align: center;
 }
 
-.product_section .btn-box a:hover {
+.product_section .btn-box p:hover {
   background-color: #C5D394 ;
+  font-size: 1.05em;
 }
 
 /* client section start */
@@ -680,7 +694,7 @@ a:focus {
 }
 
 .footer_section .footer_contact .contact_link_box a:hover {
-  color: #E8A1E5 ;
+  color: #E8A1E5;
 }
 
 .footer_section .footer-logo {
@@ -726,6 +740,10 @@ a:focus {
 
 .footer_section .footer_social a:hover {
   color: #E8A1E5 ;
+}
+
+.footer_section .footer_social .whatsapp-link:hover {
+  color: #000000;
 }
 
 .footer_section .map_container {
@@ -778,5 +796,6 @@ a:focus {
   background-color: #25d366;
   padding:20px;
   color:#fefefe
-  z-index: index; 1000;
+  /*z-index: index 1000;*/
  }
+
